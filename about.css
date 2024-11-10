@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* background: linear-gradient(to right, #4facfe, #00f2fe); */
+    color: #333;
+}
+
+.about-section {
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    border: 3px solid rgb(116, 107, 107);
+    box-shadow: 0 0 20px rgb(5, 5, 5);
+    text-align: center;
+}
+
+.about-section h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.about-section p {
+    font-size: 1.1em;
+    line-height: 1.6em;
+    color: #555;
+}
+
+/* Profile Card */
+.profile-card {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 3px solid #4facfe;
+}
+
+.profile-card h2 {
+    font-size: 1.5em;
+    color: #333;
+}
+
+.profile-card p {
+    font-size: 1em;
+    color: #666;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.social-link img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+.social-link:hover img {
+    transform: scale(1.2);
+}
+
+/* Wave effect */
+.wave {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url('https://www.transparenttextures.com/patterns/wave-cut.png') no-repeat center;
+    background-size: cover;
+    transform: translateY(-100%);
+    z-index: -1;
+}

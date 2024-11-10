@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>North Indian</title>
+    <link rel="stylesheet" href="north indian.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!------------------- First Part open ------------------->
+    <div class="first_div">
+        <p class="first_p"><img src="Swiggy logo.png" alt=""> The Royal Feast</p>
+        <a href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+        <a href="cart.html" id="cart-link" onclick="viewCart()"><i class="fa fa-shopping-cart" aria-hidden="true"></i>
+            View Cart <span id="cart-count">(0)</span></a>
+    </div>
+    <!------------------- First part close ------------------->
+
+
+    <!------------------- Third part open ------------------->
+    <div id="third_div">
+        <!-- first box open -->
+        <div class="sd">
+            <div class="sdd"><a href="order.html"><img src="Baba chicken.jpg" alt=""></a>
+            </div>
+            <h1 class="sdh1">Baba Chicken</h1>
+            <h2 class="sdh2"><i class="fa fa-star" aria-hidden="true"></i>4.3 . <i class="fa fa-clock-o"
+                    aria-hidden="true"></i>50-60 mins </h2>
+            <h1 class="sdh1">Price<p class="sdp">₹199</p>
+            </h1>
+            <h3 class="sdh3">Tandoor, Fast delivery</h3>
+            <button class="b1"><a href="order.html">Order Now</a></button>
+            <button class="b2" onclick="addToCart('Baba Chicken', 199, 'Baba chicken.jpg')">
+                Add to Cart
+            </button>
+        </div>
+        <!-- first box close -->
+
+        <!-- second box open -->
+        <div class="sd">
+            <div class="sdd"><a href="order.html"><img src="Saini thali point.jpg"
+                        alt=""></a>
+            </div>
+            <h1 class="sdh1">SAINI THALI</h1>
+            <h2 class="sdh2"><i class="fa fa-star" aria-hidden="true"></i>4.7 . <i class="fa fa-clock-o"
+                    aria-hidden="true"></i>30-45 mins </h2>
+            <h1 class="sdh1">Price<p class="sdp">₹150</p>
+            </h1>
+            <h3 class="sdh3">Indian, Thalis</h3>
+            <button class="b1"><a href="order.html">Order Now</a></button>
+            <button class="b2" onclick="addToCart('SAINI THALI', 150, 'Saini thali point.jpg')">
+                Add to Cart
+            </button>
+        </div>
+        <!-- second box close -->
+
+        <!-- third box open -->
+        <div class="sd">
+            <div class="sdd"><a href="order.html"><img src="Punjabi food.jpg" alt=""></a>
+            </div>
+            <h1 class="sdh1">Punjabi Food</h1>
+            <h2 class="sdh2"><i class="fa fa-star" aria-hidden="true"></i>4.3 . <i class="fa fa-clock-o"
+                    aria-hidden="true"></i>45-50 mins </h2>
+            <h1 class="sdh1">Price<p class="sdp">₹120</p>
+            </h1>
+            <h3 class="sdh3">Guru Hargobind Nagar</h3>
+            <button class="b1"><a href="order.html">Order Now</a></button>
+            <button class="b2" onclick="addToCart('Punjabi Food', 120, 'Punjabi food.jpg')">
+                Add to Cart
+            </button>
+        </div>
+        <!-- third box close -->
+
+        <!-- fourth box open -->
+        <div class="sd">
+            <div class="sdd"><a href="order.html"><img src="Paradise chicken.jpg"
+                        alt=""></a></div>
+            <h1 class="sdh1">Paradise Chicken</h1>
+            <h2 class="sdh2"><i class="fa fa-star" aria-hidden="true"></i>4.4 . <i class="fa fa-clock-o"
+                    aria-hidden="true"></i>40-45 mins </h2>
+            <h1 class="sdh1">Price<p class="sdp">₹150</p>
+            </h1>
+            <h3 class="sdh3">Tandoor, Indian</h3>
+            <button class="b1"><a href="order.html">Order Now</a></button>
+            <button class="b2" onclick="addToCart('Paradise Chicken', 150, 'Paradise chicken.jpg')">
+                Add to Cart
+            </button>
+        </div>
+        <!-- fourth box close -->
+
+        <!-- fifth box open -->
+        <div class="sd">
+            <div class="sdd"><a href="order.html"><img src="Neeta fish.jpg" alt=""></a>
+            </div>
+            <h1 class="sdh1">Neeta Fish</h1>
+            <h2 class="sdh2"><i class="fa fa-star" aria-hidden="true"></i>4.6 . <i class="fa fa-clock-o"
+                    aria-hidden="true"></i>40-50 mins </h2>
+            <h1 class="sdh1">Price<p class="sdp">₹150</p>
+            </h1>
+            <h3 class="sdh3">Punjabi, Tandoor</h3>
+            <button class="b1"><a href="order.html">Order Now</a></button>
+            <button class="b2" onclick="addToCart('Neeta Fish', 150, 'Neeta fish.jpg')">
+                Add to Cart
+            </button>
+        </div>
+        <!-- fifth box close -->
+
+        <!-- sixth box open -->
+        <div class="sd">
+            <div class="sdd"><a href="order.html"><img src="Saini A-1 vaishno dhaba.jpg"
+                        alt=""></a></div>
+            <h1 class="sdh1">Saini A-1 Dhaba</h1>
+            <h2 class="sdh2"><i class="fa fa-star" aria-hidden="true"></i>4.4 . <i class="fa fa-clock-o"
+                    aria-hidden="true"></i>50-60 mins</h2>
+            <h1 class="sdh1">Price<p class="sdp">₹120</p>
+            </h1>
+            <h3 class="sdh3">Punjabi, Tandoor</h3>
+            <button class="b1"><a href="order.html">Order Now</a></button>
+            <button class="b2"
+                onclick="addToCart('Saini A-1 Dhaba', 120, 'Saini A-1 vaishno dhaba.jpg')">
+                Add to Cart
+            </button>
+        </div>
+        <!-- sixth box close -->
+        <!------------------- Third part close ------------------->
+
+
+        <!------------------ Fourth part open ------------------->
+
+        <!-- first box open -->
+        <div class="sd">
+            <div class="sdd"><a href="order.html"><img src="Nik's menu.jpg" alt=""></a>
+            </div>
+            <h1 class="sdh1">Nik's Menu</h1>
+            <h2 class="sdh2"><i class="fa fa-star" aria-hidden="true"></i>3.9 . <i class="fa fa-clock-o"
+                    aria-hidden="true"></i>45-55 mins </h2>
+            <h1 class="sdh1">Price<p class="sdp">₹80</p>
+            </h1>
+            <h3 class="sdh3">Indian, Italian-American</h3>
+            <button class="b1"><a href="order.html">Order Now</a></button>
+            <button class="b2" onclick="addToCart('Nik\'s Menu', 80, 'Nik\'s menu.jpg')">
+                Add to Cart
+            </button>
+        </div>
+        <!-- first box close -->
+
+        <!-- second box open -->
+        <div class="sd">
+            <div class="sdd"><a href="order.html"><img src="Fresh-N-frozen.jpg" alt=""></a>
+            </div>
+            <h1 class="sdh1">Fresh N Frozen</h1>
+            <h2 class="sdh2"><i class="fa fa-star" aria-hidden="true"></i>4.7 . <i class="fa fa-clock-o"
+                    aria-hidden="true"></i>40-55 mins </h2>
+            <h1 class="sdh1">Price<p class="sdp">₹160</p>
+            </h1>
+            <h3 class="sdh3">Punjabi, Tandoor</h3>
+            <button class="b1"><a href="order.html">Order Now</a></button>
+            <button class="b2" onclick="addToCart('Fresh N Frozen', 160, 'Fresh-N-frozen.jpg')">
+                Add to Cart
+            </button>
+        </div>
+        <!-- second box close -->
+
+        <!-- third box open -->
+        <div class="sd">
+            <div class="sdd"><a href="order.html"><img src="Nayko bake studio.jpg"
+                        alt=""></a>
+            </div>
+            <h1 class="sdh1">Nayko Bake Studio</h1>
+            <h2 class="sdh2"><i class="fa fa-star" aria-hidden="true"></i>4.5 . <i class="fa fa-clock-o"
+                    aria-hidden="true"></i>40-50 mins </h2>
+            <h1 class="sdh1">Price<p class="sdp">₹80</p>
+            </h1>
+            <h3 class="sdh3">South Indian</h3>
+            <button class="b1"><a href="order.html">Order Now</a></button>
+            <button class="b2"
+                onclick="addToCart('Nayko Bake Studio', 80, 'Nayko bake studio.jpg')">
+                Add to Cart
+            </button>
+        </div>
+        <!-- third box close -->
+
+        <!-- fourth box open -->
+        <div class="sd">
+            <div class="sdd"><a href="order.html"><img src="Ambala chat house.jpg"
+                        alt=""></a></div>
+            <h1 class="sdh1">Ambala Chat</h1>
+            <h2 class="sdh2"><i class="fa fa-star" aria-hidden="true"></i>4.6 . <i class="fa fa-clock-o"
+                    aria-hidden="true"></i>40-45 mins </h2>
+            <h1 class="sdh1">Price<p class="sdp">₹70</p>
+            </h1>
+            <h3 class="sdh3">North-style Chat</h3>
+            <button class="b1"><a href="order.html">Order Now</a></button>
+            <button class="b2" onclick="addToCart('Ambala Chat', 70, 'Ambala chat house.jpg')">
+                Add to Cart
+            </button>
+        </div>
+        <!-- fourth box close -->
+
+        <!-- fifth box open -->
+        <div class="sd">
+            <div class="sdd"><a href="order.html"><img src="Sher-E-punjab dhaba.jpg"
+                        alt=""></a></div>
+            <h1 class="sdh1">Sher-E-Punjab</h1>
+            <h2 class="sdh2"><i class="fa fa-star" aria-hidden="true"></i>4.4 . <i class="fa fa-clock-o"
+                    aria-hidden="true"></i>40-45 mins </h2>
+            <h1 class="sdh1">Price<p class="sdp">₹150</p>
+            </h1>
+            <h3 class="sdh3">Punjabi, Tandoor</h3>
+            <button class="b1"><a href="order.html">Order Now</a></button>
+            <button class="b2" onclick="addToCart('Sher-E-Punjab', 150, 'Sher-E-punjab dhaba.jpg')">
+                Add to Cart
+            </button>
+        </div>
+        <!-- fifth box close -->
+
+        <!-- sixth box open -->
+        <div class="sd">
+            <div class="sdd"><a href="order.html"><img src="Janjua restaurant.jpg"
+                        alt=""></a></div>
+            <h1 class="sdh1">Janjua Restaurant</h1>
+            <h2 class="sdh2"><i class="fa fa-star" aria-hidden="true"></i>4.2 . <i class="fa fa-clock-o"
+                    aria-hidden="true"></i>50-55 mins </h2>
+            <h1 class="sdh1">Price<p class="sdp">₹100</p>
+            </h1>
+            <h3 class="sdh3">Punjabi, Tandoor</h3>
+            <button class="b1"><a href="order.html">Order Now</a></button>
+            <button class="b2"
+                onclick="addToCart('Janjua Restaurant', 100, 'Janjua restaurant.jpg')">
+                Add to Cart
+            </button>
+        </div>
+        <!-- sixth box close -->
+    </div>
+    <!------------------ Fourth part close ------------------>
+    <script src="north indian.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biryani</title>
+    <link rel="stylesheet" href="biryani.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!------------------- First Part open ------------------->
+    <div class="first_div">
+        <p class="first_p"><img src="Swiggy logo.png" alt=""> The Royal Feast</p>
+        <a href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+        <a href="cart.html" id="cart-link" onclick="viewCart()"><i class="fa fa-shopping-cart" aria-hidden="true"></i>
+            View Cart <span id="cart-count">(0)</span></a>
+    </div>
+    <!------------------- First part close ------------------->
+
+
+    <!------------------- Third part open ------------------->
+    <div id="third_div">
+        <!-- first box open -->
+        <div class="sd">
+            <div class="sdd"><a href="order.html"><img src="Shama chicken.jpg" alt=""></a>
+            </div>
+            <h1 class="sdh1">Shama Chicken</h1>
+            <h2 class="sdh2"><i class="fa fa-star" aria-hidden="true"></i>4.3 . <i class="fa fa-clock-o"
+                    aria-hidden="true"></i>45-50 mins </h2>
+            <h1 class="sdh1">Price<p class="sdp">₹100</p>
+            </h1>
+            <h3 class="sdh3">Biryani, Hyderabadi</h3>
+            <button class="b1"><a href="order.html">Order Now</a></button>
+            <button class="b2" onclick="addToCart('Shama Chicken', 100, 'Shama chicken.jpg')">
+                Add to Cart
+            </button>
+        </div>
+        <!-- first box close -->
+
+        <!-- second box open -->
+        <div class="sd">
+            <div class="sdd"><a href="order.html"><img src="Mughal darbar.jpg" alt=""></a>
+            </div>
+            <h1 class="sdh1">Mughal Darbar</h1>
+            <h2 class="sdh2"><i class="fa fa-star" aria-hidden="true"></i>4.7 . <i class="fa fa-clock-o"
+                    aria-hidden="true"></i>30-40 mins </h2>
+            <h1 class="sdh1">Price<p class="sdp">₹130</p>
+            </h1>
+            <h3 class="sdh3">Food Plaza, italian Style </h3>
+            <button class="b1"><a href="order.html">Order Now</a></button>
+            <button class="b2" onclick="addToCart('Mughal Darbar', 130, 'Mughal darbar.jpg')">
+                Add to Cart
+            </button>
+        </div>
+        <!-- second box close -->
+
+        <!-- third box open -->
+        <div class="sd">
+            <div class="sdd"><a href="order.html"><img src="Biryani adda.jpg" alt=""></a></div>
+            <h1 class="sdh1">Biryani Adda</h1>
+            <h2 class="sdh2"><i class="fa fa-star" aria-hidden="true"></i>4.3 . <i class="fa fa-clock-o"
+                    aria-hidden="true"></i>45-50 mins </h2>
+            <h1 class="sdh1">Price<p class="sdp">₹120</p>
+            </h1>
+            <h3 class="sdh3">Biryani Phagwara central</h3>
+            <button class="b1"><a href="order.html">Order Now</a></button>
+            <button class="b2" onclick="addToCart('Biryani Adda', 120, 'Biryani adda.jpg')">
+                Add to Cart
+            </button>
+        </div>
+        <!-- third box close -->
+
+        <!-- fourth box open -->
+        <div class="sd">
+            <div class="sdd"><a href="order.html"><img src="Zarya-The imperial poonam.jpg"
+                        alt=""></a></div>
+            <h1 class="sdh1">Zarya-The-Biryani</h1>
+            <h2 class="sdh2"><i class="fa fa-star" aria-hidden="true"></i>4.4 . <i class="fa fa-clock-o"
+                    aria-hidden="true"></i>40-45 mins </h2>
+            <h1 class="sdh1">Price<p class="sdp">₹150</p>
+            </h1>
+            <h3 class="sdh3">Pizza Cheese, Street Food</h3>
+            <button class="b1"><a href="order.html">Order Now</a></button>
+            <button class="b2"
+                onclick="addToCart('Zarya-The-Biryani', 150, 'Zarya-The imperial poonam.jpg')">
+                Add to Cart
+            </button>
+        </div>
+        <!-- fourth box close -->
+
+        <!-- fifth box open -->
+        <div class="sd">
+            <div class="sdd"><a href="order.html"><img src="Asg foods.jpg" alt=""></a></div>
+            <h1 class="sdh1">Asg Foods</h1>
+            <h2 class="sdh2"><i class="fa fa-star" aria-hidden="true"></i>4.6 . <i class="fa fa-clock-o"
+                    aria-hidden="true"></i>40-50 mins </h2>
+            <h1 class="sdh1">Price<p class="sdp">₹130</p>
+            </h1>
+            <h3 class="sdh3">Baked Pizza, Fast delivery</h3>
+            <button class="b1"><a href="order.html">Order Now</a></button>
+            <button class="b2" onclick="addToCart('Asg Foods', 130, 'Asg foods.jpg')">
+                Add to Cart
+            </button>
+        </div>
+        <!-- fifth box close -->
+
+        <!-- sixth box open -->
+        <div class="sd">
+            <div class="sdd"><a href="order.html"><img src="Mad bucket biryani.jpg" alt=""></a>
+            </div>
+            <h1 class="sdh1">Bucket Biryani</h1>
+            <h2 class="sdh2"><i class="fa fa-star" aria-hidden="true"></i>4.4 . <i class="fa fa-clock-o"
+                    aria-hidden="true"></i>50-60 mins</h2>
+            <h1 class="sdh1">Price<p class="sdp">₹150</p>
+            </h1>
+            <h3 class="sdh3">Pizza, italian Fast Food </h3>
+            <button class="b1"><a href="order.html">Order Now</a></button>
+            <button class="b2" onclick="addToCart('Bucket Biryani', 150, 'Mad bucket biryani.jpg')">
+                Add to Cart
+            </button>
+        </div>
+        <!-- sixth box close -->
+
+        <!-- seventh box open -->
+        <div class="sd">
+            <div class="sdd"><a href="order.html"><img src="Aman fast foof.jpg" alt=""></a>
+            </div>
+            <h1 class="sdh1">Aman Fast food</h1>
+            <h2 class="sdh2"><i class="fa fa-star" aria-hidden="true"></i>4.4 . <i class="fa fa-clock-o"
+                    aria-hidden="true"></i>40-50 mins </h2>
+            <h1 class="sdh1">Price<p class="sdp">₹180</p>
+            </h1>
+            <h3 class="sdh3">Pizza, Phagwara Central</h3>
+            <button class="b1"><a href="order.html">Order Now</a></button>
+            <button class="b2" onclick="addToCart('Aman Fast food', 180, 'Aman fast foof.jpg')">
+                Add to Cart
+            </button>
+        </div>
+    </div>
+    <script src="biryani.js"></script>
+</body>
+
+</html>

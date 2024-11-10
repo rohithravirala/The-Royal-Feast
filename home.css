@@ -1,0 +1,83 @@
+body {
+    margin: 0%;
+}
+
+.div1 {
+    height: 90px;
+    width: 100%;
+    background-color: #04AA6D;
+    overflow: auto;
+}
+
+.div1 a {
+    float: left;
+    margin-left: 50px;
+    margin-bottom: 0px;
+    padding: 2.4% 3.6%;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+.div1 a img{
+    float: left;
+}
+.div1 a:hover {
+    background-color:  #08754d;
+}
+
+.div2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    margin-left: 100px;
+}
+
+.div2 h1{
+    margin-top: 50px;
+}
+
+.div2 img {
+    height: 250px;
+    float: left;
+    margin-left: 50px;
+}
+
+.div4{
+    height: 400px;
+    width: 100%;
+    margin-top: 320px;
+}
+
+.div4 img{
+    margin-left: 100px;
+    width: 30%;
+    float: left;
+}
+
+.p1{
+    padding-top: 50px;
+    margin-bottom: 10px;
+    margin-left: 500px;
+    font-size: 25px;
+    color: #424242;
+}
+
+.p2{
+    margin-top: 10px;
+    margin-bottom: 0px;
+    margin-left: 500px;
+    font-size: 40px;
+    color: #424242;
+}
+
+.p3{
+    margin-top: 10px;
+    margin-left: 500px;
+    font-size: 25px;
+    color: #424242;
+}
+
+.p3 img{
+    margin-left: 0px;
+    margin-top: 10px;
+}

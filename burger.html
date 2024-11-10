@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger</title>
+    <link rel="stylesheet" href="burger.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!------------------- First Part open ------------------->
+    <div class="first_div">
+        <p class="first_p"><img src="Swiggy logo.png" alt=""> The Royal Feast</p>
+        <a href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+        <a href="cart.html" id="cart-link" onclick="viewCart()"><i class="fa fa-shopping-cart" aria-hidden="true"></i>
+            View Cart <span id="cart-count">(0)</span></a>
+    </div>
+    <div id="third_div">
+        <div class="sd">
+            <div class="sdd"><a href="order.html"><img src="Burger king.jpg" alt=""></a>
+            </div>
+            <h1 class="sdh1">Burger King</h1>
+            <h2 class="sdh2"><i class="fa fa-star" aria-hidden="true"></i>4.3 . <i class="fa fa-clock-o"
+                    aria-hidden="true"></i>50-60 mins </h2>
+            <h1 class="sdh1">Price<p class="sdp">₹180</p>
+            </h1>
+            <h3 class="sdh3">Burgers, American</h3>
+            <button class="b1"><a href="order.html">Order Now</a></button>
+            <button class="b2" onclick="addToCart('Burger King', 180, 'Burger king.jpg')">
+                Add to Cart
+            </button>
+        </div>
+        <div class="sd">
+            <div class="sdd"><a href="order.html"><img src="Pizza world.jpg" alt=""></a>
+            </div>
+            <h1 class="sdh1">Pizza World</h1>
+            <h2 class="sdh2"><i class="fa fa-star" aria-hidden="true"></i>4.7 . <i class="fa fa-clock-o"
+                    aria-hidden="true"></i>30-35 mins </h2>
+            <h1 class="sdh1">Price<p class="sdp">₹80</p>
+            </h1>
+            <h3 class="sdh3">Phagwara Central</h3>
+            <button class="b1"><a href="order.html">Order Now</a></button>
+            <button class="b2" onclick="addToCart('Pizza World',80, 'Pizza world.jpg')">
+                Add to Cart
+            </button>
+        </div>
+        <!-- second box close -->
+
+        <!-- third box open -->
+        <div class="sd">
+            <div class="sdd"><a href="order.html"><img src="Aman fast food.jpg" alt=""></a></div>
+            <h1 class="sdh1">Aman Fast food</h1>
+            <h2 class="sdh2"><i class="fa fa-star" aria-hidden="true"></i>4.3 . <i class="fa fa-clock-o"
+                    aria-hidden="true"></i>45-50 mins </h2>
+            <h1 class="sdh1">Price<p class="sdp">₹100</p>
+            </h1>
+            <h3 class="sdh3">Street Food, Fast Food</h3>
+            <button class="b1"><a href="order.html">Order Now</a></button>
+            <button class="b2" onclick="addToCart('Aman Fast food', 100, 'Aman fast food.jpg')">
+                Add to Cart
+            </button>
+        </div>
+        <!-- third box close -->
+
+        <!-- fourth box open -->
+        <div class="sd">
+            <div class="sdd"><a href="order.html"><img src="Ai lazeez.jpg" alt=""></a></div>
+            <h1 class="sdh1">Al Lazeez</h1>
+            <h2 class="sdh2"><i class="fa fa-star" aria-hidden="true"></i>4.4 . <i class="fa fa-clock-o"
+                    aria-hidden="true"></i>40-45 mins </h2>
+            <h1 class="sdh1">Price<p class="sdp">₹70</p>
+            </h1>
+            <h3 class="sdh3">Chinese, Punjabi, Snacks</h3>
+            <button class="b1"><a href="order.html">Order Now</a></button>
+            <button class="b2" onclick="addToCart('Al Lazeez', 70, 'Ai lazeez.jpg')">
+                Add to Cart
+            </button>
+        </div>
+        <!-- fourth box close -->
+
+        <!-- fifth box open -->
+        <div class="sd">
+            <div class="sdd"><a href="order.html"><img src="American burger.jpg" alt=""></a></div>
+            <h1 class="sdh1">Dawaat E Lazeez</h1>
+            <h2 class="sdh2"><i class="fa fa-star" aria-hidden="true"></i>4.6 . <i class="fa fa-clock-o"
+                    aria-hidden="true"></i>30-50 mins </h2>
+            <h1 class="sdh1">Price<p class="sdp">₹90</p>
+            </h1>
+            <h3 class="sdh3">Burger, Fast delivery</h3>
+            <button class="b1"><a href="order.html">Order Now</a></button>
+            <button class="b2" onclick="addToCart('Dawaat E Lazeez', 90, 'American burger.jpg')">
+                Add to Cart
+            </button>
+        </div>
+        <!-- fifth box close -->
+
+        <!-- sixth box open -->
+        <div class="sd">
+            <div class="sdd"><a href="order.html"><img src="Pizza villa.jpg" alt=""></a></div>
+            <h1 class="sdh1">Pizza Villa</h1>
+            <h2 class="sdh2"><i class="fa fa-star" aria-hidden="true"></i>4.4 . <i class="fa fa-clock-o"
+                    aria-hidden="true"></i>50-60 mins</h2>
+            <h1 class="sdh1">Price<p class="sdp">₹120</p>
+            </h1>
+            <h3 class="sdh3">Pizza, italian Fast Food </h3>
+            <button class="b1"><a href="order.html">Order Now</a></button>
+            <button class="b2" onclick="addToCart('Pizza Villa', 120, 'Pizza villa.jpg')">
+                Add to Cart
+            </button>
+        </div>
+        <div class="sd">
+            <div class="sdd"><a href="order.html"><img src="Burger com.jpg" alt=""></a>
+            </div>
+            <h1 class="sdh1">Fresh N Frozen</h1>
+            <h2 class="sdh2"><i class="fa fa-star" aria-hidden="true"></i>3.9 . <i class="fa fa-clock-o"
+                    aria-hidden="true"></i>45-55 mins </h2>
+            <h1 class="sdh1">Price<p class="sdp">₹120</p>
+            </h1>
+            <h3 class="sdh3">Punjabi, Tandoor</h3>
+            <button class="b1"><a href="order.html">Order Now</a></button>
+            <button class="b2" onclick="addToCart('Fresh N Frozen', 120, 'Burger com.jpg')">
+                Add to Cart
+            </button>
+        </div>
+        <div class="sd">
+            <div class="sdd"><a href="order.html"><img src="Pb 36 roll.jpg" alt=""></a></div>
+            <h1 class="sdh1">Pb 36 Rolls</h1>
+            <h2 class="sdh2"><i class="fa fa-star" aria-hidden="true"></i>4.7 . <i class="fa fa-clock-o"
+                    aria-hidden="true"></i>40-55 mins </h2>
+            <h1 class="sdh1">Price<p class="sdp">₹120</p>
+            </h1>
+            <h3 class="sdh3">Burger, italian Style </h3>
+            <button class="b1"><a href="order.html">Order Now</a></button>
+            <button class="b2" onclick="addToCart('Pb 36 Rolls', 120, 'Pb 36 roll.jpg')">
+                Add to Cart
+            </button>
+        </div>
+        <!-- second box close -->
+
+        <!-- third box open -->
+        <div class="sd">
+            <div class="sdd"><a href="order.html"><img src="Burger home.jpg" alt=""></a>
+            </div>
+            <h1 class="sdh1">Royal Kitchen</h1>
+            <h2 class="sdh2"><i class="fa fa-star" aria-hidden="true"></i>4.5 . <i class="fa fa-clock-o"
+                    aria-hidden="true"></i>40-50 mins </h2>
+            <h1 class="sdh1">Price<p class="sdp">₹120</p>
+            </h1>
+            <h3 class="sdh3">Chicken Burger, Phagwara</h3>
+            <button class="b1"><a href="order.html">Order Now</a></button>
+            <button class="b2" onclick="addToCart('Royal Kitchen', 120, 'Burger home.jpg')">
+                Add to Cart
+            </button>
+        </div>
+        <!-- third box close -->
+
+        <!-- fourth box open -->
+        <div class="sd">
+            <div class="sdd"><a href="order.html"><img src="Pizza villa.jpg" alt=""></a></div>
+            <h1 class="sdh1">Pizza Villa</h1>
+            <h2 class="sdh2"><i class="fa fa-star" aria-hidden="true"></i>4.6 . <i class="fa fa-clock-o"
+                    aria-hidden="true"></i>40-45 mins </h2>
+            <h1 class="sdh1">Price<p class="sdp">₹70</p>
+            </h1>
+            <h3 class="sdh3">American, Fast Food</h3>
+            <button class="b1"><a href="order.html">Order Now</a></button>
+            <button class="b2" onclick="addToCart('Pizza Villa', 70, 'Pizza villa.jpg')">
+                Add to Cart
+            </button>
+        </div>
+        <!-- fourth box close -->
+
+        <!-- fifth box open -->
+        <div class="sd">
+            <div class="sdd"><a href="order.html"><img src="Zaika hut.jpg" alt=""></a></div>
+            <h1 class="sdh1">Zaika Hut</h1>
+            <h2 class="sdh2"><i class="fa fa-star" aria-hidden="true"></i>4.4 . <i class="fa fa-clock-o"
+                    aria-hidden="true"></i>40-45 mins </h2>
+            <h1 class="sdh1">Price<p class="sdp">₹130</p>
+            </h1>
+            <h3 class="sdh3">Italian, Pizzas, Burgers</h3>
+            <button class="b1"><a href="order.html">Order Now</a></button>
+            <button class="b2" onclick="addToCart('Zaika Hut', 130, 'Zaika hut.jpg')">
+                Add to Cart
+            </button>
+        </div>
+        <!-- fifth box close -->
+    </div>
+    <!------------------ Fourth part close ------------------>
+    <script src="burger.js"></script>
+</body>
+
+</html>
